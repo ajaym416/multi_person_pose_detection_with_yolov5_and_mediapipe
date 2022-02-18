@@ -1,2 +1,2 @@
-# multi_person_pose_detection_with_yolov5_and_mediapipe
+# Multi person pose detection with yolov5 and mediapipe
 Pose estimation using MediaPipe works really well for most of the case, but the problem occurs when there are multiple person on a single frame. As of this writing the MediaPipe doesn't supports multiple person. For every problem there are many solutions. A flexible approach to solve this problem is to use an object detection model and get the crops of multiple people present in a frame, then estimate the pose for each person and finally aggregate the image together in a single frame
